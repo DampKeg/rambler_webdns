@@ -1,0 +1,14 @@
+{
+  "name": "rambler-webdns",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "express": "~4.10.6",
+    "morgan": "~1.5.1",
+    "debug": "~2.1.1",
+    "jade": "~1.8.2"
+  }
+}
