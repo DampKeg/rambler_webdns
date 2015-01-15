@@ -3,6 +3,25 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+h3 {
+    color: darkred;
+}
+
 a {
-  color: #00B7FF;
+  color: dodgerblue;
+}
+
+dt {
+    font-weight: bold;
+    color: green;
+    display: inline;
+}
+
+dt::after {
+    content: ': ';
+}
+
+dd {
+    margin: 0;
+    display: inline;
 }

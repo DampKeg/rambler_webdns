@@ -1,5 +1,37 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    :markdown
+        # WebDNS
+        WebDNS is a web based DNS service for clients that can't query DNS servers themselves (i.e. Windows Store Apps).
+
+        ## How to use
+        Send a GET request with url-encoded parameters to the desired endpoint to receive JSON.
+
+        ## Endpoints
+
+        ### /DNS/MX
+        #### required params
+        * [name](#name)
+
+        ### /DNS/SRV
+        #### required params
+        * [name](#name)
+        * [protocol](#protocol)
+        * [service](#service)
+
+        ### /DNS/TXT
+        #### required params
+        * [name](#name)
+
+    h2 Parameters
+    dl
+        div
+            dt(id=param_name) name
+            dd the domain name for the record.
+        div
+            dt(id=param_protocol) protocol
+            dd the transport protocol of the desired service (eg. TCP, UDP).
+        div
+            dt(id=param_service) service
+            dd the name of the desired service.
