@@ -1,6 +1,6 @@
 {
   "name": "rambler-webdns",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
@@ -9,6 +9,7 @@
     "express": "~4.10.6",
     "morgan": "~1.5.1",
     "debug": "~2.1.1",
-    "jade": "~1.8.2"
+    "jade": "~1.8.2",
+    "markdown": "~0.5.0"
   }
 }
